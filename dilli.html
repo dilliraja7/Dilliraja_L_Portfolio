@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dilliraja L | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(0,0,0,0.9);
+    }
+    .navbar a {
+      color: white !important;
+      font-weight: 500;
+    }
+    .navbar a:hover {
+      color: #ffc107 !important;
+    }
+
+    /* Hero Section */
+    header {
+      min-height: 100vh;
+      background: linear-gradient(120deg, #1f1c2c, #928dab);
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .profile img {
+      border: 4px solid white;
+      border-radius: 50%;
+      width: 240px;
+      height: 290px;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .profile img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Section Title */
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: center;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #ffc107;
+      display: block;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    /* Card Hover */
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Contact Icons */
+    .contact-icons i {
+      transition: transform 0.3s, color 0.3s;
+    }
+    .contact-icons i:hover {
+      transform: scale(1.2);
+      color: #ffc107;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#">Dilliraja L</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header>
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
+      
+      <!-- Left Content -->
+      <div class="text-center text-lg-start">
+        <h3>Hi, I'm</h3>
+        <h1 class="fw-bold">Dilliraja L</h1>
+        <p class="lead"> Interested in AI | Web Developer | Software Engineering</p>
+        <a href="https://drive.google.com/file/d/1DbYahe6IKnBHbfbXHZUCvjcfCn-wq-4I/view" target="_blank" class="btn btn-warning mt-3">Download Resume</a>
+      </div>
+
+      <!-- Right Photo -->
+      <div class="profile mt-4 mt-lg-0 text-center text-lg-end">
+        <img src="../Dilliraja.jpg" alt="Profile">
+      </div>
+
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="card shadow-sm p-4">
+        <p class="lead text-center">
+          I’m Dilliraja L, an enthusiastic Information Technology student passionate about deep learning, web development, and problem-solving. 
+          My work focuses on building impactful solutions that combine technology and innovation — from healthcare applications like Alzheimer’s detection to secure banking systems. 
+          I enjoy turning ideas into real-world projects and continuously expanding my knowledge in AI, data science, cloud technologies, and software engineering.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Alzheimer’s Detection Using Deep Learning</h5>
+              <p class="card-text">Built a CNN + LSTM model for early detection of Alzheimer’s using PET scan images. Achieved 99% accuracy.</p>
+              <a href="https://github.com/dilliraja7" target="_blank" class="btn btn-primary mt-auto">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Internet Banking Application</h5>
+              <p class="card-text">Designed a secure banking system with login, transactions, and account management modules using Java, HTML, CSS, and Apache Tomcat.</p>
+              <a href="https://github.com/dilliraja7" target="_blank" class="btn btn-primary mt-auto">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-3 col-6">
+          <div class="card p-4"><i class="fab fa-java fa-3x text-danger mb-3"></i><h6>Java</h6></div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card p-4"><i class="fab fa-python fa-3x text-primary mb-3"></i><h6>Python</h6></div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card p-4"><i class="fab fa-html5 fa-3x text-warning mb-3"></i><h6>HTML</h6></div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card p-4"><i class="fab fa-css3-alt fa-3x text-info mb-3"></i><h6>CSS</h6></div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card p-4"><i class="fab fa-bootstrap fa-3x text-purple mb-3"></i><h6>Bootstrap</h6></div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card p-4"><i class="fas fa-brain fa-3x text-danger mb-3"></i><h6>Deep Learning</h6></div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card p-4"><i class="fas fa-database fa-3x text-success mb-3"></i><h6>SQL / DBMS</h6></div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card p-4"><i class="fas fa-users fa-3x text-dark mb-3"></i><h6>Leadership</h6></div>
+        </div>
+        <!-- New AWS Skill -->
+        <div class="col-md-3 col-6">
+          <div class="card p-4"><i class="fab fa-aws fa-3x text-warning mb-3"></i><h6>AWS Cloud</h6></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="section-title text-white">Contact Me</h2>
+      <p>Email: <a href="mailto:dillirajagopal7@gmail.com" class="text-white">dillirajagopal7@gmail.com</a></p>
+      <p>Phone: <b>7418500927</b></p>
+      <div class="contact-icons mt-3">
+        <a href="https://github.com/dilliraja7" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/dilliraja-l-b92262266" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Dilliraja L. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
